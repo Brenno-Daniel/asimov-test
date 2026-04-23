@@ -7,6 +7,7 @@ interface ServiceCardProps {
   bgColor: "gray" | "lime" | "dark"
   titleHighlight: "lime" | "white"
   arrowColor: "dark" | "white"
+  imageSrc: string
 }
 
 function ArrowIcon({ color }: { color: "dark" | "white" }) {
@@ -32,7 +33,7 @@ function ArrowIcon({ color }: { color: "dark" | "white" }) {
   )
 }
 
-function ServiceCard({ title, bgColor, titleHighlight, arrowColor }: ServiceCardProps) {
+function ServiceCard({ title, bgColor, titleHighlight, arrowColor, imageSrc }: ServiceCardProps) {
   const bgClasses = {
     gray: "bg-secondary",
     lime: "bg-accent",
@@ -85,11 +86,13 @@ function ServiceCard({ title, bgColor, titleHighlight, arrowColor }: ServiceCard
         </Link>
       </div>
       
-      {/* Illustration placeholder */}
-      <div className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 md:relative md:right-0 md:top-0 md:translate-y-0">
-        <div className="w-24 h-24 md:w-40 md:h-40 bg-neutral-300/30 border-2 border-dashed border-neutral-400/50 rounded-2xl flex items-center justify-center">
-          <span className="text-neutral-500 text-xs text-center px-2">Illustration</span>
-        </div>
+      {/* Service illustration */}
+      <div className="absolute right-8 md:right-12 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 flex items-center justify-center w-24 h-24 md:w-40 md:h-40">
+        <img 
+          src={imageSrc} 
+          alt={title.join(" ")} 
+          className="w-full h-full object-contain" 
+        />
       </div>
     </div>
   )
@@ -100,37 +103,43 @@ const services: ServiceCardProps[] = [
     title: ["Search engine", "optimization"],
     bgColor: "gray",
     titleHighlight: "lime",
-    arrowColor: "dark"
+    arrowColor: "dark",
+    imageSrc: "/images/services/SEO.svg"
   },
   {
     title: ["Pay-per-click", "advertising"],
     bgColor: "lime",
     titleHighlight: "white",
-    arrowColor: "dark"
+    arrowColor: "dark",
+    imageSrc: "/images/services/PPC-adv.svg"
   },
   {
     title: ["Social Media", "Marketing"],
     bgColor: "dark",
     titleHighlight: "white",
-    arrowColor: "white"
+    arrowColor: "white",
+    imageSrc: "/images/services/SMM.svg"
   },
   {
     title: ["Email", "Marketing"],
     bgColor: "gray",
     titleHighlight: "lime",
-    arrowColor: "dark"
+    arrowColor: "dark",
+    imageSrc: "/images/services/EM.svg"
   },
   {
     title: ["Content", "Creation"],
     bgColor: "lime",
     titleHighlight: "white",
-    arrowColor: "dark"
+    arrowColor: "dark",
+    imageSrc: "/images/services/CC.svg"
   },
   {
     title: ["Analytics and", "Tracking"],
     bgColor: "dark",
     titleHighlight: "lime",
-    arrowColor: "white"
+    arrowColor: "white",
+    imageSrc: "/images/services/AT.svg"
   }
 ]
 

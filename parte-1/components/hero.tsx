@@ -13,12 +13,12 @@ const navLinks = [
 ];
 
 const clientLogos = [
-  { name: "amazon", width: "w-24" },
-  { name: "dribbble", width: "w-24" },
-  { name: "HubSpot", width: "w-28" },
-  { name: "Notion", width: "w-24" },
-  { name: "NETFLIX", width: "w-24" },
-  { name: "zoom", width: "w-20" },
+  { name: "amazon", src: "/images/company/amazon-company-logo.svg", width: "w-24" },
+  { name: "dribbble", src: "/images/company/dribbble-company-logo.svg", width: "w-24" },
+  { name: "HubSpot", src: "/images/company/hubspot-company-logo.svg", width: "w-28" },
+  { name: "Notion", src: "/images/company/notion-company-logo.svg", width: "w-24" },
+  { name: "NETFLIX", src: "/images/company/netflix-company-logo.svg", width: "w-24" },
+  { name: "zoom", src: "/images/company/zoom-company-logo.svg", width: "w-20" },
 ];
 
 function Logo() {
@@ -113,13 +113,13 @@ function HeroContent() {
           </button>
         </div>
 
-        {/* Right Column - Illustration Placeholder */}
+        {/* Right Column - Illustration */}
         <div className="order-1 flex items-center justify-center lg:order-2">
-          <div className="flex aspect-square w-full max-w-md items-center justify-center rounded-xl border-2 border-dashed border-neutral-400 bg-neutral-200 lg:aspect-video lg:max-w-none">
-            <span className="text-sm text-neutral-500">
-              Illustration Placeholder
-            </span>
-          </div>
+          <img 
+            src="/images/hero-illustration.svg" 
+            alt="Hero illustration" 
+            className="w-full max-w-md lg:max-w-none" 
+          />
         </div>
       </div>
     </section>
@@ -135,9 +135,7 @@ function ClientLogos() {
             key={logo.name}
             className={`flex h-8 items-center justify-center ${logo.width}`}
           >
-            <span className="text-lg font-semibold tracking-tight text-foreground/80 md:text-xl">
-              {logo.name}
-            </span>
+            <img src={logo.src} alt={logo.name} className="h-full w-auto object-contain" />
           </div>
         ))}
       </div>
