@@ -6,17 +6,17 @@ interface ServiceCardProps {
   title: string[]
   bgColor: "gray" | "lime" | "dark"
   titleHighlight: "lime" | "white"
-  arrowColor: "dark" | "lime"
+  arrowColor: "dark" | "white"
 }
 
-function ArrowIcon({ color }: { color: "dark" | "lime" }) {
-  const bgClass = color === "lime" ? "bg-accent" : "bg-foreground"
-  const arrowClass = color === "lime" ? "text-foreground" : "text-background"
+function ArrowIcon({ color }: { color: "dark" | "white" }) {
+  const bgClass = color === "white" ? "bg-background" : "bg-foreground"
+  const arrowClass = color === "white" ? "text-foreground" : "text-accent"
   
   return (
     <div className={`${bgClass} w-10 h-10 rounded-full flex items-center justify-center`}>
       <svg 
-        className={`w-5 h-5 ${arrowClass}`} 
+        className={`w-7 h-7 ${arrowClass} rotate-15`} 
         fill="none" 
         stroke="currentColor" 
         viewBox="0 0 24 24"
@@ -44,15 +44,15 @@ function ServiceCard({ title, bgColor, titleHighlight, arrowColor }: ServiceCard
     white: "bg-background"
   }
   
+  const highlightTextClass = "text-foreground"
+  
   const textClasses = {
     gray: "text-foreground",
     lime: "text-foreground",
     dark: "text-background"
   }
   
-  const borderShadow = bgColor === "dark" 
-    ? "border-2 border-foreground shadow-[6px_6px_0px_0px_rgba(185,255,102,1)]"
-    : "border-2 border-foreground shadow-[6px_6px_0px_0px_rgba(25,26,35,1)]"
+  const borderShadow = "border-2 border-foreground shadow-[0px_6px_0px_0px_rgb(25,26,35)]"
 
   return (
     <div 
@@ -65,7 +65,7 @@ function ServiceCard({ title, bgColor, titleHighlight, arrowColor }: ServiceCard
           {title.map((line, index) => (
             <h3 key={index} className="block">
               <span 
-                className={`${highlightClasses[titleHighlight]} ${textClasses[bgColor]} text-[30px] leading-7 font-medium px-2 py-0.5 inline rounded-md`}
+                className={`${highlightClasses[titleHighlight]} ${highlightTextClass} text-[30px] leading-10 font-medium px-2 py-0.5 inline rounded-md`}
               >
                 {line}
               </span>
@@ -112,7 +112,7 @@ const services: ServiceCardProps[] = [
     title: ["Social Media", "Marketing"],
     bgColor: "dark",
     titleHighlight: "white",
-    arrowColor: "lime"
+    arrowColor: "white"
   },
   {
     title: ["Email", "Marketing"],
@@ -130,7 +130,7 @@ const services: ServiceCardProps[] = [
     title: ["Analytics and", "Tracking"],
     bgColor: "dark",
     titleHighlight: "lime",
-    arrowColor: "dark"
+    arrowColor: "white"
   }
 ]
 
