@@ -8,14 +8,14 @@ export function CTASection() {
           <div className="flex flex-col items-center gap-8 lg:flex-row lg:justify-between">
             {/* Left Content */}
             <div className="z-10 max-w-md space-y-6 text-center lg:text-left">
-              <h3 className="text-2xl font-medium md:text-3xl lg:text-4xl">
+              <h3 className="text-[30px] leading-7 font-medium">
                 Let&apos;s make things happen
               </h3>
-              <p className="text-base leading-relaxed text-foreground/80 md:text-lg">
+              <p className="text-xl leading-7 text-foreground/80">
                 Contact us today to learn more about how our digital marketing
                 services can help your business grow and succeed online.
               </p>
-              <button className="inline-flex items-center justify-center rounded-xl bg-foreground px-8 py-4 text-base font-medium text-background transition-transform hover:scale-105 active:scale-100">
+              <button className="inline-flex items-center justify-center rounded-xl bg-foreground px-8 py-4 text-xl leading-7 font-medium text-background transition-transform hover:scale-105 active:scale-100">
                 Get your free proposal
               </button>
             </div>

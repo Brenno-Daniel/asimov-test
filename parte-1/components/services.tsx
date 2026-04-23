@@ -65,7 +65,7 @@ function ServiceCard({ title, bgColor, titleHighlight, arrowColor }: ServiceCard
           {title.map((line, index) => (
             <h3 key={index} className="block">
               <span 
-                className={`${highlightClasses[titleHighlight]} ${textClasses[bgColor]} text-2xl md:text-[1.75rem] font-medium px-2 py-0.5 inline rounded-md`}
+                className={`${highlightClasses[titleHighlight]} ${textClasses[bgColor]} text-[30px] leading-7 font-medium px-2 py-0.5 inline rounded-md`}
               >
                 {line}
               </span>
@@ -79,7 +79,7 @@ function ServiceCard({ title, bgColor, titleHighlight, arrowColor }: ServiceCard
           className={`flex items-center gap-3 mt-8 group ${textClasses[bgColor]}`}
         >
           <ArrowIcon color={arrowColor} />
-          <span className="text-lg font-medium group-hover:underline underline-offset-4">
+          <span className="text-xl leading-7 font-medium group-hover:underline underline-offset-4">
             Learn more
           </span>
         </Link>
@@ -140,11 +140,11 @@ export function Services() {
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-10 mb-12 md:mb-16">
         <h2 className="shrink-0">
-          <span className="bg-accent text-foreground text-3xl md:text-4xl font-medium px-2 py-1 rounded-lg">
+          <span className="bg-accent text-foreground text-[40px] leading-[50px] font-medium px-2 py-1 rounded-lg">
             Services
           </span>
         </h2>
-        <p className="text-foreground text-base md:text-lg max-w-xl">
+        <p className="text-foreground text-xl leading-7 max-w-xl">
           At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:
         </p>
       </div>

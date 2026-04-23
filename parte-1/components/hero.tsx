@@ -24,20 +24,8 @@ const clientLogos = [
 function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2">
-      <svg
-        width="28"
-        height="28"
-        viewBox="0 0 28 28"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="text-foreground"
-      >
-        <path
-          d="M14 0L17.5 10.5L28 14L17.5 17.5L14 28L10.5 17.5L0 14L10.5 10.5L14 0Z"
-          fill="currentColor"
-        />
-      </svg>
-      <span className="text-xl font-medium tracking-tight">Positivus</span>
+      <img src="/brand/positivus-logo.svg" alt="Positivus" className="h-7 w-7" />
+      <span className="text-3xl font-medium tracking-tight">Positivus</span>
     </Link>
   );
 }
@@ -56,7 +44,7 @@ function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-normal text-foreground transition-colors hover:text-foreground/70"
+              className="text-xl leading-7 font-normal text-foreground transition-colors hover:text-foreground/70"
             >
               {link.label}
             </Link>
@@ -64,7 +52,7 @@ function Header() {
         </nav>
 
         {/* Desktop CTA Button */}
-        <button className="hidden rounded-xl border-2 border-foreground bg-background px-6 py-3 text-sm font-normal text-foreground transition-all hover:bg-foreground hover:text-background lg:block">
+        <button className="hidden rounded-xl border-2 border-foreground bg-background px-6 py-3 text-xl font-normal leading-7 text-foreground transition-all hover:bg-foreground hover:text-background lg:block">
           Request a quote
         </button>
 
@@ -115,12 +103,12 @@ function HeroContent() {
           <h1 className="text-balance text-4xl font-medium leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
             Navigating the digital landscape for success
           </h1>
-          <p className="max-w-lg text-base leading-relaxed text-foreground/90 md:text-lg">
+          <p className="max-w-lg text-xl leading-7 text-foreground/90">
             Our digital marketing agency helps businesses grow and succeed
             online through a range of services including SEO, PPC, social media
             marketing, and content creation.
           </p>
-          <button className="w-fit rounded-xl bg-foreground px-8 py-4 text-base font-normal text-background transition-all hover:bg-foreground/90 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)]">
+          <button className="w-fit rounded-xl bg-foreground px-8 py-4 text-xl font-normal leading-7 text-background transition-all hover:bg-foreground/90 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)]">
             Book a consultation
           </button>
         </div>

@@ -23,10 +23,10 @@ export function CaseStudies() {
       <div className="mx-auto max-w-7xl">
         {/* Section Header */}
         <div className="mb-12 flex flex-col items-start gap-6 md:flex-row md:items-center">
-          <h2 className="shrink-0 rounded-md bg-accent px-2 py-1 text-3xl font-medium text-foreground md:text-4xl">
+          <h2 className="shrink-0 rounded-md bg-accent px-2 py-1 text-[40px] leading-[50px] font-medium text-foreground">
             Case Studies
           </h2>
-          <p className="max-w-xl text-base leading-relaxed text-foreground md:text-lg">
+          <p className="max-w-xl text-xl leading-7 text-foreground">
             Explore Real-Life Examples of Our Proven Digital Marketing Success
             through Our Case Studies
           </p>
@@ -39,14 +39,14 @@ export function CaseStudies() {
               <div key={index} className="flex flex-1 flex-col md:flex-row">
                 {/* Case Study Content */}
                 <div className="flex flex-1 flex-col justify-between gap-6">
-                  <p className="text-base leading-relaxed text-white md:text-lg">
+                  <p className="text-xl leading-7 text-white">
                     {study.description}
                   </p>
                   <a
                     href="#"
                     className="group inline-flex items-center gap-2 text-accent transition-opacity hover:opacity-80"
                   >
-                    <span className="text-lg font-medium md:text-xl">
+                    <span className="text-xl leading-7 font-medium">
                       Learn more
                     </span>
                     <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
