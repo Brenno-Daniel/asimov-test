@@ -1,8 +1,10 @@
-# Entrega 1 - Figma para código
+# Positivus Landing Page Design (Community)
+
+![Positivus Landing Page](./public/images/preview.png)
 
 ## Descrição
 
-Reproduzir as quatro primeiras seções do design do Figma fielmente com código.
+Landing page da agência Positivus reproduzida fielmente a partir do design do Figma. Este é um projeto comunitário que demonstra a implementação das primeiras seções de uma página de agência de marketing digital.
 
 ### Seções implementadas
 
@@ -17,15 +19,35 @@ Reproduzir as quatro primeiras seções do design do Figma fielmente com código
 - Tailwind CSS 4
 - TypeScript
 - Lucide React (ícones)
+- Vercel Analytics
 
-### Como executar
+## Requisitos
+
+- Node.js 18+
+- pnpm 8+
+
+## Como executar
 
 ```bash
-cd parte-1
+# Instalar dependências
 pnpm install
+
+# Development
 pnpm dev
+
+# Build
+pnpm build
+
+# Start em produção
+pnpm start
+
+# Formatar código
+pnpm format
+
+# Checar formatação
+pnpm lint
 ```
 
-### Referência
+## Referência
 
 - [Link do Figma](https://www.figma.com/design/QGCJc8PeG7Gk0rPpx8028f/Positivus-Landing-Page-Design--Community-?node-id=333-1290&t=r5Mx3dl4VV66u0r5-0)
