@@ -1,34 +1,59 @@
-# Entrega 2 - Criação do zero
+# Asimov Landing Page
+
+![Asimov Landing Page](./public/images/preview.png)
 
 ## Descrição
 
-Criar uma seção de hero para uma landing page de curso, utilizando IA como acelerador.
+Landing page da Asimov Academy para curso de Python e IA. Seção hero com informações do curso, benefícios e chamada para ação. Criada a partir de descrição textual (especificações do teste) utilizando v0.app (com assistência do Google Gemini).
 
-### Textos do hero
+### Protótipo (v0.app)
 
-**Headline:** Aprenda Python do zero e construa projetos reais com IA
+- **URL**: https://v0-curso-python-ia.vercel.app/
 
-**Subheadline:** O curso mais prático do Brasil para quem quer entrar em tecnologia sem enrolação
+### Seções implementadas
 
-**Bullets:**
+- **Navbar**: Navegação fixa com menu responsivo
+- **Hero**: Seção principal com headline, subheadline, benefícios e CTAs
 
-- +40 horas de conteúdo direto ao ponto
-- Projetos com Python + IA desde o módulo 1
-- Suporte da comunidade com +20.000 alunos
-- Certificado reconhecido pelo mercado
+### Stack
 
-**CTA primário:** Quero começar agora
+- Next.js 16 + React 19
+- Tailwind CSS 4
+- TypeScript
+- Lucide React (ícones)
+- Vercel Analytics
 
-**CTA secundário:** Ver o que vou aprender
+## Requisitos
 
-### Inspirações visuais
+- Node.js 18+
+- pnpm 8+
 
-- Asimov Academy (identidade visual)
-- Linear
-- Frame.io
-- Isomeet
-- Antimetal
+## Como executar
 
-### Status
+```bash
+# Instalar dependências
+pnpm install
 
-Aguardando implementação.
+# Development
+pnpm dev
+
+# Build
+pnpm build
+
+# Start em produção
+pnpm start
+
+# Formatar código
+pnpm format
+
+# Checar formatação
+pnpm lint
+```
+
+## Referência
+
+- [Asimov Academy](https://asimov.academy)
+- [Linear](https://linear.app)
+- [Frame.io](https://frame.io)
+- [Isomeet](https://www.isomeet.com)
+- [Antimetal](https://antimetal.com)
