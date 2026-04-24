@@ -3,20 +3,20 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #FFFFFF;
-  --foreground: #191A23;
-  --card: #FFFFFF;
-  --card-foreground: #191A23;
-  --secondary: #F3F3F3;
-  --secondary-foreground: #191A23;
-  --muted: #F3F3F3;
-  --muted-foreground: #191A23;
-  --accent: #B9FF66;
-  --accent-foreground: #191A23;
+  --background: #ffffff;
+  --foreground: #191a23;
+  --card: #ffffff;
+  --card-foreground: #191a23;
+  --secondary: #f3f3f3;
+  --secondary-foreground: #191a23;
+  --muted: #f3f3f3;
+  --muted-foreground: #191a23;
+  --accent: #b9ff66;
+  --accent-foreground: #191a23;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #191A23;
-  --input: #191A23;
-  --ring: #191A23;
+  --border: #191a23;
+  --input: #191a23;
+  --ring: #191a23;
 }
 
 .dark {

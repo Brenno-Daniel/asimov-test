@@ -1,34 +1,34 @@
-"use client";
+'use client'
 
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from 'lucide-react'
 
 const caseStudies = [
   {
     description:
-      "For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.",
+      'For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.',
   },
   {
     description:
-      "For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.",
+      'For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.',
   },
   {
     description:
-      "For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.",
+      'For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.',
   },
-];
+]
 
 export function CaseStudies() {
   return (
-    <section className="px-4 py-16 md:px-8 lg:px-16">
+    <section className="px-4 md:px-8 lg:px-16 pt-[140px] pb-[140px]">
       <div className="mx-auto max-w-7xl">
         {/* Section Header */}
-        <div className="mb-12 flex flex-col items-start gap-6 md:flex-row md:items-center">
+        <div className="mb-[80px] flex flex-col items-start gap-6 md:flex-row md:items-center">
           <h2 className="shrink-0 rounded-md bg-accent px-2 py-1 text-[40px] leading-[50px] font-medium text-foreground">
             Case Studies
           </h2>
           <p className="max-w-xl text-xl leading-7 text-foreground">
-            Explore Real-Life Examples of Our Proven Digital Marketing Success
-            through Our Case Studies
+            Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case
+            Studies
           </p>
         </div>
 
@@ -39,16 +39,12 @@ export function CaseStudies() {
               <div key={index} className="flex flex-1 flex-col md:flex-row">
                 {/* Case Study Content */}
                 <div className="flex flex-1 flex-col justify-between gap-6">
-                  <p className="text-xl leading-7 text-white">
-                    {study.description}
-                  </p>
+                  <p className="text-xl leading-7 text-white">{study.description}</p>
                   <a
                     href="#"
                     className="group inline-flex items-center gap-2 text-accent transition-opacity hover:opacity-80"
                   >
-                    <span className="text-xl leading-7 font-medium">
-                      Learn more
-                    </span>
+                    <span className="text-xl leading-7 font-medium">Learn more</span>
                     <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </a>
                 </div>
@@ -70,5 +66,5 @@ export function CaseStudies() {
         </div>
       </div>
     </section>
-  );
+  )
 }
