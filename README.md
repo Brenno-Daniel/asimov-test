@@ -11,8 +11,8 @@ Entregas: parte-1 (Figma → código), parte-2 (criação a partir de descriçã
 
 ## Entregas
 
-- [parte-1](./parte-1/README.md): Positivus Landing Page
-- [parte-2](./parte-2/README.md): Asimov Landing Page
+- [parte-1](https://positivus-lp-six.vercel.app/): Positivus Landing Page - [README](./parte-1/README.md)
+- [parte-2](https://asmv-lp.vercel.app/): Asimov Landing Page - [README](./parte-2/README.md)
 
 ## Executar
 
